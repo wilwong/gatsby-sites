@@ -42,13 +42,8 @@ mkdir -p deploy/blog
 
 
 echo "Copying blog artifacts..."
-cp -r gatsby-one/public/* deploy/blog/
-if test -d deploy/blog/blog; then
-  mv -r deploy/blog/blog/* deploy/blog/
-  rm -rf deploy/blog/blog
-fi
-
-
+cp -r gatsby-one/public/blog/* deploy/blog/
+cp -r gatsby-one/public/!(blog) deploy/blog/
 
 echo "Copying redirects configuration to Netlify build dir..."
 cp netlify_configs/_redirects deploy
