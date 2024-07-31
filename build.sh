@@ -42,8 +42,8 @@ mkdir -p deploy/blog
 
 
 echo "Copying blog artifacts..."
-rsync -av --progress gatsby-one/public/blog deploy/blog/
-rsync -av --progress gatsby-one/public deploy/blog/ --exclude blog
+rsync -av --progress gatsby-one/public/blog/* deploy/blog/
+rsync -av --progress gatsby-one/public/* deploy/blog/ --exclude blog
 
 
 echo "Copying redirects configuration to Netlify build dir..."
