@@ -50,6 +50,11 @@ export const query = graphql`
           title
           slug
           date(formatString: "MMMM DD, YYYY")
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(width: 800, placeholder: BLURRED)
+            }
+          }
         }
         internal {
           contentFilePath
