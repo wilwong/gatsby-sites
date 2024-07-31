@@ -5,5 +5,4 @@
 #   configuration file.
 
 # Blog paths:
-/blog                  /blog                 200!
-/blog/*                /blog/:splat          200!
+/blog                  /blog                 200

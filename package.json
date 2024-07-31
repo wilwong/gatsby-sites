@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-sites",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build.sh",
+    "serve": "pushd deploy; python3 -m http.server 9000; popd"
+  },
+  "author": "wil",
+  "license": "ISC",
+  "description": ""
+}
