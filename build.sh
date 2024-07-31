@@ -18,6 +18,7 @@ set -euxo pipefail
 
 function build_blog {
   pushd gatsby-one
+  yarn
   yarn clean
   yarn install 
   yarn build-pp
