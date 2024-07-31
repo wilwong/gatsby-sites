@@ -6,3 +6,4 @@
 
 # Blog paths:
 /blog                  /blog                 200
+/blog                  /blog/404             404
