@@ -3,5 +3,6 @@ node_modules/
 .cache/
 .vscode
 public
+deploy
 src/gatsby-types.d.ts
 *.code-workspace
