@@ -51,3 +51,6 @@ cp netlify_configs/_redirects deploy
 
 echo "List files in deploy directory"
 find deploy
+
+# copy the blank page to the root just for easier debug
+cp blank-page/index.html deploy
