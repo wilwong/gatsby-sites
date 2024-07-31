@@ -35,7 +35,11 @@ echo "Building blog..."
 build_blog
 
 echo "Create final output directory..."
+if test -d deploy/blog; then
+  rm -rf deploy/blog
+fi
 mkdir -p deploy/blog
+
 
 echo "Copying blog artifacts..."
 cp -r gatsby-one/public/* deploy/blog/
