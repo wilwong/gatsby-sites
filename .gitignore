@@ -4,5 +4,5 @@ node_modules/
 .vscode
 public
 deploy
-src/gatsby-types.d.ts
+gatsby-one/src/gatsby-types.d.ts
 *.code-workspace

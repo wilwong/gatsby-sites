@@ -29,7 +29,7 @@ export default function PostTemplate({
   return (
     <Layout>
       <Link
-        to={withPrefix("/")}
+        to="/"
         className="text-md flex w-fit items-center gap-1.5 font-semibold opacity-80 hover:underline"
       >
         Back to Blog

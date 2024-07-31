@@ -6,11 +6,10 @@ export const BlogRollItem = ({postFrontmatter: pfm}:{postFrontmatter: any})=> {
     pfm.featuredImage?.childImageSharp?.gatsbyImageData &&
       getImage(pfm.featuredImage.childImageSharp.gatsbyImageData);
 
-  const slug = withPrefix(pfm.slug);
-  
+
   return (
     <li className="group">
-      <Link to={slug} title={pfm.title}>
+      <Link to={pfm.slug} title={pfm.title}>
         <div className="h-32 overflow-hidden rounded-lg bg-panel/5 sm:h-52">
           {featuredImage && (
             <GatsbyImage
