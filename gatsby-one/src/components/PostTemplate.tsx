@@ -1,6 +1,6 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
-import { graphql, Link, withPrefix } from "gatsby";
+import { graphql, Link } from "gatsby";
 import type { HeadProps, PageProps } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 

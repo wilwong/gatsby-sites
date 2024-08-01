@@ -42,8 +42,8 @@ mkdir -p deploy/blog
 
 
 echo "Copying blog artifacts..."
-rsync -av --progress gatsby-one/public/blog/* deploy/blog/
-rsync -av --progress gatsby-one/public/* deploy/blog/ --exclude blog
+rsync -av --progress gatsby-one/public/blog/* deploy/blog/ || true
+rsync -av --progress gatsby-one/public/* deploy/blog/ --exclude blog || true
 
 
 echo "Copying redirects configuration to Netlify build dir..."
@@ -53,4 +53,4 @@ echo "List files in deploy directory"
 find deploy
 
 # copy the blank page to the root just for easier debug
-cp blank-page/index.html deploy
+cp empty-page/index.html deploy

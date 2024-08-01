@@ -14,4 +14,7 @@
 # /blog/*                /gatsby/blog/:splat       200!
 # /ai-tools              /gatsby                   200!
 # /ai-tools/*            /gatsby/ai-tools/:splat   200!
-/blog/*        /blog/404          404
+/blog/*               /blog/404             404
+/press                /blog/news            200
+/press/release        /blog/release         200
+/press/release/*      /blog/404             404 
